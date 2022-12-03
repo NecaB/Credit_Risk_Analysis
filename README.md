@@ -68,7 +68,7 @@ The recall values were 0.71 and 0.58 for low-risk and high-risk respectively.
 
 Balanced Random Forest Classifier 
 
-This model uses a classification technique to address imbalance data.
+This model uses a mix of classification and regression technique to address imbalance data.
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/109915684/205422105-76ae2e86-9854-40a5-896a-0bca8a65be99.png">
 
@@ -96,15 +96,15 @@ Summary and Analysis
 
 Balanced Accuracy Score 
 
-The Balanced Accuracy Scores ranged between 0.544 and 0.788 across all models except for the Easy Ensemble AdaBoost Classifier where it was 0.931. 
+This reflects the ratio of accuracy or true prdictions in the model. The Balanced Accuracy Scores ranged between 0.544 and 0.788 across all models except for the Easy Ensemble AdaBoost Classifier where it was 0.931. 
 
 Precision 
 
-The precision values were typically the same for all models with 0.01 for low-risk and 1.00 for high- risk except Balanced Random Forest Classifier, 0.03 for low-risk and 1.00 for high risk and the Easy Ensemble model where it was 0.09 for low-risk and 1.00 for high risk. 
+This element defines the reliability of the model when a positive classification is made. Hence, a low precision value means that there are a large number of positive values in the results. The precision values were typically the same for all models with 0.01 for low-risk and 1.00 for high- risk except Balanced Random Forest Classifier, 0.03 for low-risk and 1.00 for high risk and the Easy Ensemble model where it was 0.09 for low-risk and 1.00 for high risk. 
 
 Recall
 
-These values were very erratic between the different models ranging between ~ 0.63 and 0.71 for high-risk applications and 0.40 and 0.87 for low-risk. However, Easy Ensemble had the highest at 0.92 for high-risk and 0.94 for low risk. 
+This defines the ability of the model to identify the positive samples. Therefore, a low recall represents a large number of false negatives. For the models observed the recall values were very erratic between the different models ranging between ~ 0.63 and 0.71 for high-risk applications and 0.40 and 0.87 for low-risk. However, Easy Ensemble had the highest at 0.92 for high-risk and 0.94 for low risk. 
 
 Conclusions and Recommendations 
 
@@ -113,3 +113,4 @@ Undersampling performed the poorest, even though in range to some of the models 
 
 EasyEnsemble model was one of the best predictors because the algorithm aggregates all results. The Balanced Accuracy score was 0.931, the highest of all models and best for inspiring confidence in the model’s ability to determine high-risk credit applications.  The Precision for Low Risk was 1.00 and the of 0.09 for high-risk, somewhat of a deterrent for this model.  The best recall options were also in this model with 0.92 and 0.94 for low-risk and high-risk respectively. 
 
+The original dataset seems heavily imbalanced and skewed. Hence, for best results a bigger dataset would provide more accurate results. 
